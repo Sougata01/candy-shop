@@ -1,0 +1,10 @@
+form{
+    display: flex;
+}
+div{
+    margin: 5px;
+    text-align: center;
+}
+button[type="submit"]{
+    margin-top: 25%;
+}
