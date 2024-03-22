@@ -56,7 +56,6 @@ function onscreen(obj) {
 // buy1
 function buy1(objId, name, description, price, quantity) {
     const item = document.getElementById(objId)
-    console.log(item)
     const updatedQuantity = parseInt(quantity) - 1
     if (quantity <= 0) {
         alert("Item is empty.")
@@ -113,7 +112,6 @@ function buy2(objId, name, description, price, quantity) {
 // buy3
 function buy3(objId, name, description, price, quantity) {
     const item = document.getElementById(objId)
-    console.log(item)
     const updatedQuantity = parseInt(quantity) - 3
     if (quantity <= 0) {
         alert("Item is empty.")
