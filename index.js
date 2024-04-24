@@ -13,7 +13,7 @@ function handleFormSubmit(event) {
 
     // create
     axios
-        .post("https://crudcrud.com/api/59f1518e67fe46b0acb865213cffae0b/details", obj)
+        .post("https://crudcrud.com/api/c526ea1815834095b4be6c684cb48cce/details", obj)
         .then((response) => {
             console.log(response)
             onscreen(response.data)
@@ -25,7 +25,7 @@ function handleFormSubmit(event) {
 // read
 window.addEventListener("DOMContentLoaded", () => {
     axios
-        .get("https://crudcrud.com/api/59f1518e67fe46b0acb865213cffae0b/details")
+        .get("https://crudcrud.com/api/c526ea1815834095b4be6c684cb48cce/details")
         .then((response) => {
             for (let i = 0; i < response.data.length; i++) {
                 onscreen(response.data[i])
@@ -62,7 +62,7 @@ function buy1(objId, name, description, price, quantity) {
         return
     }
     axios
-        .put(`https://crudcrud.com/api/59f1518e67fe46b0acb865213cffae0b/details/${objId}`, {
+        .put(`https://crudcrud.com/api/c526ea1815834095b4be6c684cb48cce/details/${objId}`, {
             name,
             description,
             price,
@@ -92,7 +92,7 @@ function buy2(objId, name, description, price, quantity) {
         return
     }
     axios
-        .put(`https://crudcrud.com/api/59f1518e67fe46b0acb865213cffae0b/details/${objId}`, {
+        .put(`https://crudcrud.com/api/c526ea1815834095b4be6c684cb48cce/details/${objId}`, {
             name,
             description,
             price,
@@ -122,7 +122,7 @@ function buy3(objId, name, description, price, quantity) {
         return
     }
     axios
-        .put(`https://crudcrud.com/api/59f1518e67fe46b0acb865213cffae0b/details/${objId}`, {
+        .put(`https://crudcrud.com/api/c526ea1815834095b4be6c684cb48cce/details/${objId}`, {
             name,
             description,
             price,
